@@ -28,6 +28,19 @@ export const PrefsStore = signalStore(
         () =>
           store.counter() === 0 || store.counter() - store.prefsCounter() < 0,
       ),
+      checkFizzBuzz: computed(() => {
+        if (store.counter() === 0) {
+          return '';
+        } else if (store.counter() % 3 === 0 && store.counter() % 5 === 0) {
+          return 'FizzBuzz';
+        } else if (store.counter() % 5 === 0) {
+          return 'Buzz';
+        } else if (store.counter() % 3 === 0) {
+          return 'Fizz';
+        } else {
+          return '';
+        }
+      }),
     };
   }),
 );

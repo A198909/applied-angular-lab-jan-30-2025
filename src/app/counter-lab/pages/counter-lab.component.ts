@@ -25,7 +25,7 @@ import { PrefsStore } from '../services/prefs-lab.store';
         +
       </button>
 
-      <span data="fizzBuzz"> {{ fizzBuzzWord() }}</span>
+      <span data="fizzBuzz"> {{ store.checkFizzBuzz() }}</span>
       <div class="flex">
         <p>Current Preference:</p>
         <span data="currentPref"> {{ store.prefsCounter() }} </span>
