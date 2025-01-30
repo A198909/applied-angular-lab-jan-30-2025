@@ -7,4 +7,6 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   template: ` <p>Welcome Home</p> `,
   styles: ``,
 })
-export class HomeComponent {}
+export class HomeComponent {
+  // before lab
+}
