@@ -106,5 +106,13 @@ export class NavigationComponent {
       href: 'jeff-counter',
       text: 'Counter (Jeff)',
     },
+    {
+      href: 'counter',
+      text: 'Counter',
+    },
+    {
+      href: 'books',
+      text: 'Books',
+    },
   ]);
 }
